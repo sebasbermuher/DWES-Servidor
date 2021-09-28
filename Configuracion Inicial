@@ -1,0 +1,15 @@
+crear project - maven project
+marcamos primera casilla (create a simple project)
+escribimos group id (iesalixar.servidor)// artifact id (evaluacioninicial)
+Escribimos Nombre y Descripcion
+
+
+Base datos Docker:
+sudo docker run -d -it --name bbdd -p 3336:3306 -e MYSQL_ROOT_PASSWORD=12345 mariadb
+Contraseña = 12345
+
+ARRANCAR DOCKER (TERMINAL)
+sudo docker start "nombre" -->(bbdd)
+
+PARA VER LOS CONTENEDORES / BASES DE DATOS DEL DOCKER
+sudo docker ps -a
