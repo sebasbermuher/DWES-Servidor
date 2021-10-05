@@ -13,7 +13,7 @@
 		<description>Login Post</description>
 		<display-name>LoginPost</display-name>
 		<servlet-name>LoginPost</servlet-name>
-		<servlet-class>org.iesalixar.servidor.sbh</servlet-class>
+		<servlet-class>org.iesalixar.servidor.sbh.LoginPost</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<!-- DEBE COINCIDIR CON DI -->
