@@ -8,7 +8,7 @@
 </head>
 <body>
 	<form action="index.jsp" method="post">
-	<p><label from="nombre">Nombre</label>
+	<p><label for="nombre">Nombre</label>
 		<p><input id="nombre" type="text" name="nombre" required></p>
 		<p><input type="submit" value="enviar"></p>
 	</form>
