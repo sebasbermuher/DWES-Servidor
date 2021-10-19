@@ -9,11 +9,11 @@
 <body>
 
 <h3>Configurador de vehículo</h3>
-    <form method="post">
+    <form method="get" action="coche.jsp">
       Color de la tapicería:
       <select name="tapiceria">
         <option value="blanco">Blanco</option>
-        <option value="negfro">Negro</option>
+        <option value="negro">Negro</option>
         <option value="berenjena">Berenjena</option>
       </select>
       <br>
@@ -25,16 +25,6 @@
       <br>
       <input type="submit" value="Aceptar">
     </form>
-    
-    
-    <% if(request.getMethod().equals("POST")){
-      String tapiceria = request.getParameter("tapiceria");
-      String moldura = request.getParameter("moldura");
-      String imagen = tapiceria + moldura + ".jpg";
-    }
-    %>
-    
-     
 
 </body>
 </html>
