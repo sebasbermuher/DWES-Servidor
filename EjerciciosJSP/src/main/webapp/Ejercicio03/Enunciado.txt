@@ -1,0 +1,2 @@
+Realiza una aplicación que calcule la media de tres notas.
+

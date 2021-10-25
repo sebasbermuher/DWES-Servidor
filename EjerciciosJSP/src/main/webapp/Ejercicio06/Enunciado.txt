@@ -1,0 +1,2 @@
+ Realiza una aplicación que pida un número y que luego muestre la tabla de  multiplicar de ese número. 
+ El resultado se debe mostrar en una tabla  (<table> en HTML).

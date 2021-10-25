@@ -1,0 +1,2 @@
+Realiza una aplicación que genere 100 números aleatorios del 1 al 200. Los  primos deberán aparecer en un color 
+diferente al resto.

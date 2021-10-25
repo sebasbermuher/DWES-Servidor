@@ -1,0 +1,3 @@
+Realiza un configurador del interior de un vehículo. El usuario puede  elegir, mediante un formulario, el color 
+de la tapicería – blanco, negro o berenjena - y el material de las molduras – madera o carbono. Se debe  mostrar 
+el interior del coche tal y como lo quiere el usuario.

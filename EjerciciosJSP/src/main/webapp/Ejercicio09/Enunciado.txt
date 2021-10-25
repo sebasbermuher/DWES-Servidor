@@ -1,0 +1,4 @@
+Mejora la aplicación anterior de tal forma que no haga falta introducir el
+    día de la semana en que cae el día 1 y el número de días que tiene el mes.
+    El programa debe deducir estos datos del mes y el año.
+    Pista: puedes usar la clase Calendar (java.util.Calendar).

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Ejercicio 16</title>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -48,11 +49,11 @@
           if ((fila == filaAlfil) && (columna == columnaAlfil)) {
             imagen = "alfilBlanco.png";
           } else if ((fila == filaCaballo) && (columna == columnaCaballo)) {
-            imagen = "caballoNegro.jpg";
+            imagen = "caballoNegro.png";
           } else {
             imagen = "transparente.png";
           }
-          out.print("<td class=\""+ color + "\"><img src=\"img/" + imagen + "\"</td>");
+          out.print("<td class=\""+ color + "\"><img src=\"" + imagen + "\"</td>");
         }
         out.print("<td>" + fila + "</td></tr>");
       }

@@ -1,0 +1,3 @@
+ Combina las dos aplicaciones anteriores en una sola de tal forma que en la   página principal aparezca en un 
+ único formulario y se pueda elegir pasar de  euros a dolares o de dolares a euros según dónde introduzcamos 
+ el valor y  el botón que pulsemos. Incluye en la página alguna imagen.
