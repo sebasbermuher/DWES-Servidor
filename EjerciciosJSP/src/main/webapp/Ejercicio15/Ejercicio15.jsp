@@ -10,11 +10,10 @@
 <h1>Apuesta y gana</h1>
     <div>
     <form method="post" action="juego.jsp">
-      <p>Introduzca la cantidad que quiere apostar:</p>
-      <input type="number" min="1" name="dinero">€<br>
+      <p>Introduzca la cantidad que quiera apostar:</p>
+      <input type="number"  name="dinero"> €
       <input type="submit" value="Aceptar">
     </form>
     </div>
-
 </body>
 </html>

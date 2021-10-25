@@ -8,19 +8,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.iesalixar.servidor.model.sbh.Usuarios;
-
 /**
- * Servlet implementation class Usuario
+ * Servlet implementation class Login
  */
-@WebServlet("/Usuario")
-public class Usuario extends HttpServlet {
+@WebServlet("/Login")
+public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Usuario() {
+    public Login() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,24 +27,18 @@ public class Usuario extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		HttpSession sesion = request.getSession();
-		
-		if(!sesion.isNew()) {
-			
-			Usuarios usuario = (Usuarios)sesion.getAttribute("usuario");
-			
-			if(usuario!=null && usuario.getNombre().equals("usuario")) {
-				request.setAttribute("usuarioBean", usuario);
-				request.getRequestDispatcher("Usuario.jsp").forward(request, response);
-				return;
-			}
-			
-		}
-		sesion.invalidate();
-		response.sendRedirect(request.getContextPath());
-		
-		
+		request.getRequestDispatcher("Login.jsp").forward(request, response);
 	}
 
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		if (request.getParameter("entrar").equals("IniciarSesion")) {
+            HttpSession sesion = request.getSession();
+            response.sendRedirect("Seleccionar");
+            return;
+        }
+	}
 }

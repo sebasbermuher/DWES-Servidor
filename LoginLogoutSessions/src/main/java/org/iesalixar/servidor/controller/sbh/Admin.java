@@ -40,6 +40,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 				request.setAttribute("usuarioBean", usuario);
 				
 				request.getRequestDispatcher("Admin.jsp").forward(request, response);
+				return;
 			}
 		}
 		sesion.invalidate();
