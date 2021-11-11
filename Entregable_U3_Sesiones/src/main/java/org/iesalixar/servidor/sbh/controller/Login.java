@@ -51,6 +51,10 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 			
 			if (password.equals(confirmar_password)) {
 			sesion.setAttribute("LOGEADO", true);
+			
+			String user = request.getParameter("user");
+			sesion.setAttribute("user", user);
+			
 		
 			response.sendRedirect(request.getContextPath()+"/Reserva");
 			

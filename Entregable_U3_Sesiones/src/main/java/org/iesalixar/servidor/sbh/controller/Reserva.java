@@ -48,11 +48,12 @@ public class Reserva extends HttpServlet {
 
                 if (request.getParameter("fecha_inicio")!=null && request.getParameter("fecha_fin")!=null
                         && request.getParameter("num_personas")!=null) {
-
+                	
                     sesion.setAttribute("fecha_inicio", (request.getParameter("fecha_inicio")));
                     sesion.setAttribute("fecha_fin", (request.getParameter("fecha_fin")));
                     sesion.setAttribute("num_personas", (request.getParameter("num_personas")));
-                    sesion.setAttribute("servicios", request.getParameterValues("checkbox"));
+                    sesion.setAttribute("checkbox", request.getParameterValues("checkbox"));
+                              
 
                 }
 

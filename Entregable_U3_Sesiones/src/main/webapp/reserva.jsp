@@ -26,16 +26,16 @@
 					<br>
 					<h3>SERVICIOS</h3>
 					<div class="col">
-						<input type="checkbox" name="servicios" value="WiFi">WiFi 
-        				<input type="checkbox" name="servicios" value="Toallas">Toallas
+						<input type="checkbox" name="checkbox" value="WiFi">WiFi 
+        				<input type="checkbox" name="checkbox" value="Toallas">Toallas
         			</div>
         			<div class="col">
-        				<input type="checkbox" name="servicios" value="Desayuno">Desayuno 
-        				<input type="checkbox" name="servicios" value="Limpieza">Limpieza
+        				<input type="checkbox" name="checkbox" value="Desayuno">Desayuno 
+        				<input type="checkbox" name="checkbox" value="Limpieza">Limpieza
         			</div>
         			<div class="col">
-        				<input type="checkbox" name="servicios" value="Ruta guiada">Ruta guiada 
-        				<input type="checkbox" name="servicios" value="Sauna">Sauna
+        				<input type="checkbox" name="checkbox" value="Ruta guiada">Ruta guiada 
+        				<input type="checkbox" name="checkbox" value="Sauna">Sauna
         			</div>
 				
 					<input class="btn btn-primary w-100 mt-3" type="submit" name="reserva" value="RESERVAR"/>					

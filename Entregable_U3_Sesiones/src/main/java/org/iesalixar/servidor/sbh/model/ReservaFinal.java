@@ -1,13 +1,14 @@
 package org.iesalixar.servidor.sbh.model;
 
-public class Reserva {
+public class ReservaFinal {
 	
 	private String fecha_incio;
 	private String fecha_final;
-	private int num_personas;
-	private String servicios;
+	private String num_personas;
+	private String[] servicios;
 	
-	public Reserva() {
+	
+	public ReservaFinal() {
 		
 	}
 	
@@ -23,18 +24,21 @@ public class Reserva {
 	public void setFecha_final(String fecha_final) {
 		this.fecha_final = fecha_final;
 	}
-	public int getNum_personas() {
+	public String getNum_personas() {
 		return num_personas;
 	}
-	public void setNum_personas(int num_personas) {
+	public void setNum_personas(String num_personas) {
 		this.num_personas = num_personas;
 	}
-	public String getServicios() {
+	
+	public String[] getServicios() {
 		return servicios;
 	}
-	public void setServicios(String servicios) {
+
+	public void setServicios(String[] servicios) {
 		this.servicios = servicios;
 	}
+	
 	
 
 }

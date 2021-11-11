@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.iesalixar.servidor.sbh.model.ReservaFinal;
+
 /**
  * Servlet implementation class Confirmar
  */
@@ -30,7 +32,18 @@ public class Confirmar extends HttpServlet {
 		HttpSession sesion = request.getSession();
 
         if (!sesion.isNew() && sesion.getAttribute("LOGEADO")!=null && ((boolean)sesion.getAttribute("LOGEADO"))) {
-            request.getRequestDispatcher("confirmar.jsp").forward(request, response);
+            ReservaFinal reserva = new ReservaFinal();
+            
+            reserva.setFecha_incio((String)sesion.getAttribute("fecha_inicio"));
+            reserva.setFecha_final((String)sesion.getAttribute("fecha_fin"));
+            reserva.setNum_personas((String)sesion.getAttribute("num_personas"));
+            reserva.setServicios((String[])sesion.getAttribute("checkbox"));
+           
+            
+            request.setAttribute("reserva", reserva);
+            
+        	
+        	request.getRequestDispatcher("confirmar.jsp").forward(request, response);
             return;
         } 
         sesion.invalidate();
