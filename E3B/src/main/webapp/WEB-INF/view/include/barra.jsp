@@ -9,7 +9,7 @@
 		<div class="container-fluid">
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav">
-				<c:if test="${sessionScope.rol=='usuario'}">
+				<c:if test="${sessionScope.rol=='user'}">
 					<li class="nav-item"><a class="nav-link text-white"
 						href="${pageContext.request.contextPath}">Inicio</a></li>
 					
