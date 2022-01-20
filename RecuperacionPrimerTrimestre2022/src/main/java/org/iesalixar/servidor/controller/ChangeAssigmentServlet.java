@@ -7,19 +7,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.iesalixar.servidor.dao.DAOProductsImpl;
-
 /**
- * Servlet implementation class MostrarProductosServlet
+ * Servlet implementation class ChangeAssigmentServlet
  */
-@WebServlet("/MostrarProductosServlet")
-public class MostrarProductosServlet extends HttpServlet {
+@WebServlet("/ChangeAssigmentServlet")
+public class ChangeAssigmentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MostrarProductosServlet() {
+    public ChangeAssigmentServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,16 +26,8 @@ public class MostrarProductosServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	
-		
-		DAOCustomerImpl dao = new DAOCustomerImpl();
-		
-		
-		request.setAttribute("productos", dao.getProduct(categoria));
-		
-
-		request.getRequestDispatcher("WEB-INF/view/mostrarProductos.jsp").forward(request, response);
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
