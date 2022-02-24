@@ -34,7 +34,7 @@ public class Post implements Serializable {
 	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Valorar> valoraciones = new HashSet<>();
 	
-	@OneToMany(mappedBy = "comments", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "postComments", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Comments> comentarios = new HashSet<>();
 	
 	@ManyToOne

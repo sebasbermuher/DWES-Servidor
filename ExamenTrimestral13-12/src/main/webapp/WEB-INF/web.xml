@@ -40,6 +40,16 @@
 		<servlet-class>org.iesalixar.servidor.controller.MostrarProductosServlet</servlet-class>
 	</servlet>
 	
+		<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>org.iesalixar.servidor.controller.RegisterServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>	
 	
 	
 	<servlet-mapping>

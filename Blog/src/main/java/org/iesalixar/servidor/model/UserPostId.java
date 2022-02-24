@@ -1,8 +1,9 @@
 package org.iesalixar.servidor.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class UserPostId {
+public class UserPostId implements Serializable {
 	private Long user;
     private Long post;
     

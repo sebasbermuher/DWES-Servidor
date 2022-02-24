@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="fragments/bootstrap::head(title='About')"></head>
+<body>
+	<div class="container mt-5">
+		<div class="row mt-5">
+			<header th:insert="fragments/menu::menu"></header>
+		</div>
+	</div>
+	<h1 class="text-center p-3">
+		Esta es la pagina <span th:text="${contenido}"></span>
+	</h1>
+	
+	<footer th:insert="fragments/footer::footer"></footer>
+</body>
+</html>
